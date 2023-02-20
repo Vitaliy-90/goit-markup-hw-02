@@ -21,6 +21,7 @@ ul {
 
 /* header */
 .header-logo {
+    text-decoration: none;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -35,6 +36,7 @@ ul {
 }
 
 .header-link {
+
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -42,13 +44,25 @@ ul {
     color: var(--primary-color);
 }
 
+.header-link:hover,
+.header-link:focus {
+    color: var(--logo-color);
+}
+
 .address-mail,
 .address-tel {
+    font-style: normal;
     text-decoration: none;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--secondary-color);
+}
+
+.address-mail:hover,
+.address-mail:focus,
+.address-tel:hover,
+.address-tel:focus {
+    color: var(--logo-color)
 }
 
 /*Hero  */
@@ -58,7 +72,7 @@ ul {
 
 .hero-title {
 
-    font-weight: 700;
+
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -66,6 +80,7 @@ ul {
 }
 
 .hero-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -98,7 +113,6 @@ ul {
 }
 
 .advantages-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
@@ -107,17 +121,11 @@ ul {
 /* What are we doing */
 
 .works-title {
-    font-weight: 700;
+
     font-size: 36px;
     line-height: 1.11;
-
-
     text-align: center;
-
     text-transform: capitalize;
-
-
-
     color: var(--primary-color);
 }
 
@@ -127,7 +135,6 @@ ul {
 }
 
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -143,7 +150,6 @@ ul {
 }
 
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
@@ -155,6 +161,7 @@ ul {
 }
 
 .footer-logo {
+    text-decoration: none;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -169,7 +176,6 @@ ul {
 }
 
 .footer-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: var(--footer-color);
@@ -189,6 +195,7 @@ ul {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     background: var(--background-btn);
+    color: var(--hero-color);
 }
 
 /* gallery */
@@ -201,7 +208,6 @@ ul {
 }
 
 .gallery-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
